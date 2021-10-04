@@ -1,0 +1,29 @@
+<div class="card border-secondary mb-3">
+  <div class="card-header">Usuarios</div>
+  <div class="card-body text-secondary">
+    <h5 class="card-title">Lista de Usuarios</h5>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Usuario</th>
+          <th>Pais</th>
+          <th>Estado</th>
+          <th>Genero</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let registro of registros">
+          <td>{{registro.idRegistros}}</td>
+          <td>{{registro.usuario}}</td>
+          <td>{{registro.pais}}</td>
+          <td>{{registro.estado}}</td>
+          <td>{{registro.genero}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <button (click)="logout()" type="submit" class="btn btn-secondary">Cerrar Sesión</button>
+</div>

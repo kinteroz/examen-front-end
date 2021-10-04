@@ -1,0 +1,27 @@
+<div class="card border-secondary mb-3">
+  <div class="card-header">Usuarios</div>
+  <div class="card-body text-secondary">
+    <h5 class="card-title">Lista de Usuarios</h5>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Usuario</th>
+          <th>Pais</th>
+          <th>Estado</th>
+          <th>Genero</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios">
+          <td>{{usuario.idUsuario}}</td>
+          <td>{{usuario.usuario}}</td>
+          <td>{{usuario.pais}}</td>
+          <td>{{usuario.estado}}</td>
+          <td>{{usuario.genero}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
